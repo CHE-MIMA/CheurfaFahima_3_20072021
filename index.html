@@ -13,61 +13,67 @@
 </head>
 
 <body>
-    <!--cette balise va contenir ma navigation et le Fonctionnnement-->
+    <!--cette balise va contenir ma navigation -->
     <header>
         <nav>
-            <a id="logo" href="#">
+            <a class="header__logo" href="index.html">
                 <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
             </a>
-            <form class="form" action="#">
-                <div class="location-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <input type="text" placeholder="Paris, Belleville">
-            </form>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button class="button-explorer" type="button">
-                <span>Explorer nos restaurants</span>
-            </button>
+    </header>
+    <!-- cette balises va contenir la localisation, le fonctionnement et mes restaurants-->
+    <main>
+        <form class="location" action="#">
+            <div class="location__icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input type="text" placeholder="Paris, Belleville">
+        </form>
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <button class="button__explorer" type="button">
+            <span>Explorer nos restaurants</span>
+        </button>
         </nav>
-        <section class="fonctionnement">
+        <section class="process">
             <h2>Fonctionnnement</h2>
             <ul>
                 <li>
-                    <button class="choix-resto" type="button">
+                    <div class="process__number"> 1 </div>
+                    <button class="process__resto" type="button">
                         <i class="fas fa-mobile-alt"></i>
                         <span>Choisissez un restaurant</span>
                     </button>
                 </li>
                 <li>
-                    <button class="compo-menu" type="button">
+                    <div class="process__number"> 2 </div>
+                    <button class="process__menu" type="button">
                         <i class="fas fa-ellipsis-v"></i>
                         <i class="fas fa-bars"></i>
                         <span>Composez votre menu</span>
                     </button>
                 </li>
                 <li>
-                    <button class="degustation-resto" type="button">
+                    <div class="process__number"> 3 </div>
+                    <button class="process__degustation" type="button">
                         <i class="fas fa-store"></i>
                         <span>Dégustez au restaurant</span>
                     </button>
                 </li>
             </ul>
         </section>
-    </header>
-    <!-- cette balises va contenir mes restaurants-->
-    <main>
+
+        <!-- cette balises va contenir mes restaurants-->
+
         <section class="resto">
             <h2>Restaurants</h2>
-            <div class="resto-cards">
-                <a class="resto-item" href="palette-du-gout.html">
-                    <div class="img-p">
+            <div class="resto__cards">
+                <a class="resto__item" href="palette-du-gout.html">
+                    <div class="resto__img__p">
                         <img src="images-ohmyfood/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                             alt="palette-gouts" />
                         <p>nouveau</p>
                     </div>
-                    <div class="resto-contenu">
+                    <div class="resto__contenu">
                         <h3>Palette du gôut </h3>
                         <p>Ménilmontant</p>
                     </div>
@@ -75,12 +81,12 @@
                         <i class=" far fa-heart"></i>
                     </div>
                 </a>
-                <a class="resto-item" href="note-enchantee.html">
-                    <div class="img-p">
+                <a class="resto__item" href="note-enchantee.html">
+                    <div class="resto__img__p">
                         <img src="images-ohmyfood/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note-enchanteé" />
                         <p>nouveau</p>
                     </div>
-                    <div class="resto-contenu">
+                    <div class="resto__contenu">
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
                     </div>
@@ -88,7 +94,7 @@
                         <i class=" far fa-heart"></i>
                     </div>
                 </a>
-                <a class="resto-item" href="française.html">
+                <a class="resto__item" href="française.html">
                     <img src="images-ohmyfood/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="la-française" />
                     <div class="resto-contenu">
                         <h3> À la française</h3>
@@ -98,10 +104,10 @@
                         <i class=" far fa-heart"></i>
                     </div>
                 </a>
-                <a class="resto-item" href="delice-des-sens.html">
+                <a class="resto__item" href="delice-des-sens.html">
                     <img src="images-ohmyfood/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                         alt="délices-sens" />
-                    <div class="resto-contenu">
+                    <div class="resto__contenu">
                         <h3>Le délice des sens</h3>
                         <p>Folie-méricourt</p>
                     </div>
@@ -115,19 +121,23 @@
         </section>
     </main>
     <footer>
-        <h1>ohmyfood</h1>
-        <a class="proposition-resto" href="#">
-            <i class="fas fa-utensils"></i>
-            <p> Proposer un restaurant </p>   
+        <a class="footer__logo" href="index.html">
+            <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
         </a>
-        <a class="partenariat" href="#">
+        <div class="footer__contenu"></div>
+        <a class="footer__contenu-resto" href="#">
+            <i class="fas fa-utensils"></i>
+            <p> Proposer un restaurant </p>
+        </a>
+        <a class="footer__contenu-partenariat" href="#">
             <i class="fas fa-hands-helping"></i>
             <p>Devenir partenaire</p>
         </a>
         <a href="#"> Mentions légales </a> <br>
 
         <a href="mailto:mima.cherfa19@hotmail.fr"> Contact </a>
-        
+        </div>
+
 
     </footer>
 
