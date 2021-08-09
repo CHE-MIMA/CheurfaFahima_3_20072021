@@ -1,0 +1,22 @@
+{
+  "name": "cheurfafahima_3_20072021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHE-MIMA/CheurfaFahima_3_20072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHE-MIMA/CheurfaFahima_3_20072021/issues"
+  },
+  "homepage": "https://github.com/CHE-MIMA/CheurfaFahima_3_20072021#readme",
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
+}
