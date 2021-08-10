@@ -1,5 +1,53 @@
-/* definition de la police des pages*/
-body
+
+$colour-primary: #9356DC; 
+$colour-secondary: #FF79DA; 
+$colour-tertiary: #99E2D0;
+
+@media screen and (max-width:767px)  
 {
+  /* definition de la police des pages*/
+   body
+   {
     font-family: roboto, sans serif;
-}
+    font-size: 1em;
+    margin: 5% 0%;
+   } 
+
+   header
+   {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .location
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2dede;
+    padding: 10px 10% 10px 10%;
+    width: 100%;
+
+  }
+  .location input
+  {
+    background-color: #e2dede;
+    color: black;
+    font-family: roboto, sans serif;
+    font-size: 1em;
+    border: 0px;
+    padding: 5px;
+   
+  }
+  .presentation
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 100%;
+  }
+
+
+} 
+    
