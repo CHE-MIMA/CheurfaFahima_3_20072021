@@ -5,13 +5,11 @@
     font-size: 1em;
     margin: 5% 0%;
   }
-
-  header {
+ header {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .location {
     display: flex;
     justify-content: center;

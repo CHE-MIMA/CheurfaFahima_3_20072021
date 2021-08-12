@@ -11,15 +11,13 @@
 
     <title>ohmyfood</title>
 </head>
-
 <body>
-    <!--cette balise va contenir ma navigation -->
+    <!--cette balise va contenir mon logo -->
     <header>
-        <nav>
-            <a class="header__logo" href="index.html">
-                <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
-            </a>
-        </nav>
+        <a class="header__logo" href="index.html">
+            <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
+        </a>
+
     </header>
     <!-- cette balises va contenir la localisation, le fonctionnement et mes restaurants-->
     <main>
@@ -41,14 +39,18 @@
             <h2>Fonctionnnement</h2>
             <ul>
                 <li>
-                    <div class="process__number"> 1 </div>
+                    <div class="process__number">
+                        <span>1</span>
+                    </div>
                     <button class="process__resto" type="button">
                         <i class="fas fa-mobile-alt"></i>
                         <span>Choisissez un restaurant</span>
                     </button>
                 </li>
                 <li>
-                    <div class="process__number"> 2 </div>
+                    <div class="process__number">
+                        <span>2</span>
+                    </div>
                     <button class="process__menu" type="button">
                         <i class="fas fa-ellipsis-v"></i>
                         <i class="fas fa-bars"></i>
@@ -56,7 +58,9 @@
                     </button>
                 </li>
                 <li>
-                    <div class="process__number"> 3 </div>
+                    <div class="process__number">
+                        <span>3</span>
+                    </div>
                     <button class="process__degustation" type="button">
                         <i class="fas fa-store"></i>
                         <span>Dégustez au restaurant</span>
@@ -99,7 +103,7 @@
                 </a>
                 <a class="resto__item" href="française.html">
                     <img src="images-ohmyfood/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="la-française" />
-                    <div class="resto-contenu">
+                    <div class="resto__contenu">
                         <h3> À la française</h3>
                         <p>Cité rouge</p>
                     </div>
@@ -125,7 +129,7 @@
     </main>
     <footer>
         <a class="footer__logo" href="index.html">
-            <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
+            <h1>ohmyfood</h1>
         </a>
         <div class="footer__contenu"></div>
         <a class="footer__contenu-resto" href="#">
@@ -138,12 +142,9 @@
         </a>
         <a href="#"> Mentions légales </a> <br>
 
-        <a href="mailto:mima.cherfa19@hotmail.fr"> Contact </a>
+        <a href="mailto:ohmyfood@gmail.com"> Contact </a>
         </div>
-
-
     </footer>
-
 </body>
 
 </html>
