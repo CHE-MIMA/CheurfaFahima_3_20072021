@@ -1,40 +1,106 @@
-@media screen and (max-width: 767px) {
-  /* definition de la police des pages*/
-  body {
-    font-family: roboto, sans serif;
-    font-size: 1em;
-    margin: 5% 0%;
-  }
- header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e2dede;
-    padding: 10px 10% 10px 10%;
-    width: 100%;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .location input {
-    background-color: #e2dede;
-    color: black;
-    font-family: roboto, sans serif;
-    font-size: 1em;
-    border: 0px;
-    padding: 5px;
-  }
+body {
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  margin: auto;
+}
 
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F2F2F2;
-    width: 100%;
-  }
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebe8e8;
+  padding: 10px 10% 10px 10%;
+  width: 100%;
+}
+
+.location input {
+  background-color: #ebe8e8;
+  color: black;
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  border: 0px;
+  padding: 5px 5px 5px 10px;
+  font-weight: bold;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+
+.presentation h1 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: roboto, sans serif;
+  margin: 30px 12% 0% 12%;
+}
+
+.presentation p {
+  text-align: center;
+  margin: 20px 5% 20px 5%;
+}
+
+.button-explorer {
+  border: solid 1px #9356DC;
+  background-color: #9356DC;
+  border-radius: 20px;
+  color: #fff;
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  margin-bottom: 40px;
+  padding: 12px;
+  box-shadow: #bdbbbb 0px 0px 10px 0px;
+}
+
+footer {
+  background-color: black;
+  border: solid black 1px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1em;
+  padding-left: 30px;
+  color: #fff;
+}
+
+.footer__logo {
+  font-family: Shrikhand;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.footer__contenu-resto {
+  display: flex;
+  color: #fff;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
