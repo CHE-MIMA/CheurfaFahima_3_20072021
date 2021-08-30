@@ -18,32 +18,46 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  font-size: 1.2em;
+  font-family: roboto, sans serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: roboto, sans serif;
+}
+
 a {
   text-decoration: none;
 }
 
-header {
+.header__logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
+  border: 1px solid #ebe8e8;
+  box-shadow: 5px gray;
 }
 
 .location {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ebe8e8;
+  background-color: #f3f3f3;
   padding: 10px 10% 10px 10%;
   width: 100%;
 }
 
 .location input {
-  background-color: #ebe8e8;
+  background-color: #f3f3f3;
   color: black;
+  border: 0px;
   font-family: roboto, sans serif;
   font-size: 1em;
-  border: 0px;
-  padding: 5px 5px 5px 10px;
+  padding: 5px 5px 5px 15px;
   font-weight: bold;
 }
 
@@ -68,37 +82,84 @@ header {
 }
 
 .button-explorer {
-  border: solid 1px #9356DC;
-  background-color: #9356DC;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   border-radius: 20px;
   color: #fff;
   font-family: roboto, sans serif;
   font-size: 1em;
   margin-bottom: 40px;
-  padding: 12px;
-  box-shadow: #bdbbbb 0px 0px 10px 0px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+li {
+  display: flex;
+}
+
+.process {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 8%;
+  margin-top: 40px;
+}
+.process__btn {
+  background-color: #F6F6F6;
+  border: solid 1px #F6F6F6;
+  border-radius: 20px;
+  padding: 20px 90px 20px 30px;
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.process__number {
+  color: #fff;
+  border: #9356DC solid 1px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  position: absolute;
+  margin-left: -4%;
+  margin-top: 40px;
+  padding: 4px 8PX 4PX 8px;
+}
+
+.process__btn span {
+  margin-left: 20px;
+}
+
+#icone-resto {
+  color: #9356DC;
 }
 
 footer {
-  background-color: black;
-  border: solid black 1px;
+  background-color: #3a3939;
+  border: solid #3a3939 1px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 1em;
   padding-left: 30px;
   color: #fff;
+  height: 200px;
 }
 
 .footer__logo {
   font-family: Shrikhand;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  margin-top: 20px;
 }
 
 .footer__contenu-resto {
   display: flex;
+  color: #fff;
+  font-size: 1em;
+}
+
+.footer__contenu {
   color: #fff;
   font-size: 1em;
 }
