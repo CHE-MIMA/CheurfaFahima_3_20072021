@@ -1,5 +1,5 @@
 
-
+@import
 $colour-secondary: #FF79DA; 
 $colour-tertiary: #99E2D0;
 $color-background-new: #99E2D0;
@@ -27,7 +27,7 @@ $color-text-new: #008766;
   }
   h2 
   {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: roboto, sans serif;
     font-weight: bold;
   }
@@ -51,14 +51,12 @@ $color-text-new: #008766;
    flex-direction: column;
    align-items: center;
  }
-   .header__logo
-   {
-    @include flex-center;
-    padding: 15px;
-    border: 1px solid #ebe8e8;
-    box-shadow: 5px gray;
-    
-  }
+ header
+ {
+  @include flex-center;
+  padding: 15px;
+ }
+ 
   .location
   {
     @include flex-center;
@@ -86,7 +84,7 @@ $color-text-new: #008766;
   .presentation h1
   { 
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: roboto, sans serif;
     margin: 30px 12% 0% 12%;
   
@@ -95,6 +93,8 @@ $color-text-new: #008766;
   {
     text-align: center;
     margin: 20px 5% 20px 5%;
+    font-size: 1.2em;
+    font-family: roboto, sans serif;
     
   }
   $colour-primary: #9356DC; 
@@ -108,7 +108,7 @@ $color-text-new: #008766;
     font-size: 1em;
     margin-bottom: 40px;
     padding: 15px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 0px #a1a1a1;
   }
   li
   {
@@ -127,12 +127,12 @@ $color-text-new: #008766;
     background-color: $color-background;
     border: solid 1px $color-background;
     border-radius: 20px;
-    padding: 20px 90px 20px 30px;
+    padding: 25px 90px 25px 30px;
     font-family: roboto, sans serif;
     font-size: 1em;
     margin-top: 20px;
     font-weight: bold;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 10px 0px #a1a1a1;
    }
    &__number
    {
@@ -155,7 +155,65 @@ $color-text-new: #008766;
   {
     color: $colour-primary;
   }
+  .resto 
+  {
+    width:100%;
+    background: $color-background;
+    margin-top: 60px;
+    &__cards
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+    }
+    &__item
+    {
+       border: $color-background solid 1px;
+       border-radius: 20px;
+       box-shadow: 0px 0px 10px 0px #a1a1a1;
+       margin: 10px 5%;
+       color: black;
+       
+    }
+    &__new
+    {
+      position:absolute;
+      margin-left:-25%;
+      margin-top: 40px;
+      color: $color-text-new;
+      background: $color-background-new;
+      border-radius: 2px;
+      padding: 5px;
+      border: 1px solid $color-background-new
 
+    }
+    }
+    .resto__item img
+    {
+      object-fit: cover;
+      min-width: 100%;
+      border-radius:  20px 20px 0px 0px;
+      height: 200px;
+      border: 0px solid transparent;
+    }
+  
+  .resto h2
+  {
+     padding-top: 50px;
+     margin-left: 5%;
+  }
+  .resto__contenu-heart
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+ .heart-icon
+ {
+   font-size: 1.5em;
+ }
 
 
 
@@ -184,20 +242,16 @@ $color-text-new: #008766;
    width: 100%;
    display: flex;
    flex-direction: column;
-   
    justify-content: space-between;
-   font-size: 1em;
    padding-left: 30px;
    color: $color-white;
-   height: 200px;
-   
   }
   .footer__logo
   { 
     font-family: Shrikhand;
     color: $color-white;
     font-size: 0.8em;
-    margin-top: 20px;
+    padding-top: 20px;
   
   }
   .footer__contenu-resto
@@ -209,7 +263,17 @@ $color-text-new: #008766;
   .footer__contenu
   {
     color: $color-white;
-    font-size: 1em;  
+    font-size: 1em;
+  }
+  .footer__contenu-resto p
+  {
+    margin-left: 2%;
+  }
+  .footer__contact
+  {
+    color: $color-white;
+    font-size: 1em;
+    padding-bottom: 40px;
   }
   
 
