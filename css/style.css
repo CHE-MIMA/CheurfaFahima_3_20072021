@@ -153,6 +153,9 @@ li {
   margin: 10px 5%;
   color: black;
 }
+.resto__contenu {
+  padding: 15px;
+}
 .resto__new {
   position: absolute;
   margin-left: -25%;
@@ -183,46 +186,58 @@ li {
 }
 
 .heart-icon {
-  font-size: 1.5em;
+  font-size: 2em;
+  padding-top: 15px;
+  padding-right: 15px;
 }
 
-footer {
+.footer {
   background-color: #3a3939;
   border: solid #3a3939 1px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 30px;
   padding-left: 30px;
   color: #fff;
 }
-
 .footer__logo {
   font-family: Shrikhand;
   color: #fff;
   font-size: 0.8em;
-  padding-top: 20px;
+  padding-top: 15px;
 }
-
-.footer__contenu-resto {
+.footer__resto {
   display: flex;
   color: #fff;
   font-size: 1em;
+  margin-top: 15px;
 }
-
+.footer__hands {
+  display: flex;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 15px;
+}
 .footer__contenu {
   color: #fff;
   font-size: 1em;
+  margin-top: 15px;
 }
-
-.footer__contenu-resto p {
-  margin-left: 2%;
-}
-
 .footer__contact {
   color: #fff;
   font-size: 1em;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
+  margin-top: 15px;
+}
+
+.footer p {
+  margin-left: 3%;
+}
+
+.footer__hands i {
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=style.css.map */
