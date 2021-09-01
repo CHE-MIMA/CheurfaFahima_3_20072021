@@ -123,7 +123,7 @@ $color-white: #fff;
   }
   
 
-  .button-explorer
+  .btn-explorer
   {
    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
    border-radius: 20px;
@@ -132,7 +132,7 @@ $color-white: #fff;
     font-size: 1em;
     margin-bottom: 40px;
     padding: 15px;
-    box-shadow: 0px 0px 10px 0px #a1a1a1;
+  
   }
   li
   {
@@ -284,13 +284,18 @@ $color-white: #fff;
      background-color: $color-white;
      border-radius: 20px;
      margin: 15px;
+     &__cards
+     {
+       display: flex;
+       justify-content: space-between;
+     }
      &__contenu
      {
        display: flex;
        justify-content: space-between;
        padding: 0px 10px 10px 10px;
        font-size: 1em;
-       font-family:roboto, sans serif;
+       
      }
   }
   .food h3
@@ -299,7 +304,24 @@ $color-white: #fff;
     font-size: 1em;
     font-weight: bold;
   }
- 
+   .food strong
+   {
+     font-size: 0.8em;
+     font-weight: bold;
+     
+   }
+   .commande-button
+   {
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    border-radius: 20px;
+    color: $color-white;
+    font-family: roboto, sans serif;
+     font-size: 1em;
+     margin-bottom: 40px;
+     padding: 10px 40px 10px 40px;
+     align-items: center;
+   }
+
 
 
 

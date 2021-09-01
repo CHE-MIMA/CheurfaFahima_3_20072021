@@ -102,7 +102,7 @@ header {
   font-family: roboto, sans serif;
 }
 
-.button-explorer {
+.btn-explorer {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   border-radius: 20px;
   color: #fff;
@@ -110,7 +110,6 @@ header {
   font-size: 1em;
   margin-bottom: 40px;
   padding: 15px;
-  box-shadow: 0px 0px 10px 0px #a1a1a1;
 }
 
 li {
@@ -248,18 +247,37 @@ li {
   border-radius: 20px;
   margin: 15px;
 }
+.food__cards {
+  display: flex;
+  justify-content: space-between;
+}
 .food__contenu {
   display: flex;
   justify-content: space-between;
   padding: 0px 10px 10px 10px;
   font-size: 1em;
-  font-family: roboto, sans serif;
 }
 
 .food h3 {
   padding: 10px 10px 0px 10px;
   font-size: 1em;
   font-weight: bold;
+}
+
+.food strong {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.commande-button {
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 20px;
+  color: #fff;
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  margin-bottom: 40px;
+  padding: 10px 40px 10px 40px;
+  align-items: center;
 }
 
 .footer {
