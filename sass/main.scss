@@ -167,7 +167,6 @@ $color-text-new: #008766;
       flex-direction: column;
       justify-content: space-between;
       margin-top: 10px;
-      margin-bottom: 60px;
       padding-bottom: 60px;
     }
     &__item
@@ -227,22 +226,8 @@ $color-text-new: #008766;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   $color-white: #fff;
+
   .footer
   {
    background-color: rgb(58, 57, 57);
@@ -251,7 +236,6 @@ $color-text-new: #008766;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   margin-top: 30px;
    padding-left: 30px;
    color: $color-white;
   
@@ -293,7 +277,7 @@ $color-text-new: #008766;
   }
   .footer p
   {
-    margin-left: 3%;
+    margin-left: 15px;
   }
   .footer__hands i
   {

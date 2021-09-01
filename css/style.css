@@ -143,7 +143,6 @@ li {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 60px;
   padding-bottom: 60px;
 }
 .resto__item {
@@ -198,7 +197,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 30px;
   padding-left: 30px;
   color: #fff;
 }
@@ -233,7 +231,7 @@ li {
 }
 
 .footer p {
-  margin-left: 3%;
+  margin-left: 15px;
 }
 
 .footer__hands i {
