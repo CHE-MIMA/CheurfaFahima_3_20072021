@@ -1,0 +1,78 @@
+.menu__img
+ {
+  object-fit: cover;
+  min-width: 100%;
+  height: 250px;
+ 
+ }
+  .menu
+  {
+    background: $color-background;
+    border-radius: 30px 30px 0px 0px;
+    border: solid 1px $color-background;
+    &__title
+    {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 15px;
+      margin-top: 20px;
+    }
+    &__heart-icon
+    {
+      font-size: 1.3em;
+      font-weight: normal;
+      margin-right: 40px;
+      margin-top: 5px;
+    }
+  }
+  .menu__title h1
+  {
+    font-family: Shrikhand;
+    font-size: 1.6em;
+  }
+  .menu h2
+  {
+    font-size: 1em;
+    margin-top: 30px;
+    border-bottom: 3px solid $colour-tertiary;
+    padding: 0px 0PX 2px 0px;
+    margin-left: 15px;
+    margin-right: 325px;
+
+  }
+  .food 
+  {
+     background-color: $color-white;
+     border-radius: 20px;
+     margin: 15px;
+     &__cards
+     {
+       display: flex;
+       justify-content: space-between;
+     }
+     &__contenu
+     {
+       display: flex;
+       justify-content: space-between;
+       padding: 0px 10px 10px 10px;
+       font-size: 1em;
+       
+     }
+  }
+  .food h3
+  {
+    padding: 10px 10px 0px 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+   .food strong
+   {
+     font-size: 0.8em;
+     font-weight: bold;
+     
+   }
+  
+
+
+
+

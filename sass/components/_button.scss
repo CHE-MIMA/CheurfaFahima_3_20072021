@@ -1,0 +1,24 @@
+
+
+.btn-explorer
+{
+ background: linear-gradient(180deg, $colour-secondary 0%,$colour-primary 100%);
+ border-radius: 20px;
+ color: $color-white;
+ font-family: roboto, sans serif;
+  font-size: 1em;
+  margin-bottom: 40px;
+  padding: 15px;
+
+}
+.commande-button
+{
+ background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+ border-radius: 20px;
+ color: $color-white;
+ font-family: roboto, sans serif;
+  font-size: 1em;
+  margin-bottom: 40px;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+}

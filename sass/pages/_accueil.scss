@@ -1,0 +1,144 @@
+.location
+{
+  @include flex-center;
+  background-color: #f3f3f3;
+  padding: 10px 10% 10px 10%;
+  width: 100%;
+}
+.location input
+{
+  background-color: #f3f3f3;
+  color: black;
+  border: 0px;
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  padding: 5px 5px 5px 15px;
+  font-weight: bold;
+}
+
+.presentation
+{
+  @include flex-column-center;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+.presentation h1
+{ 
+  text-align: center;
+  font-size: 1.4em;
+  font-family: roboto, sans serif;
+  margin: 30px 12% 0% 12%;
+
+}
+.presentation p  
+{
+  text-align: center;
+  margin: 20px 5% 20px 5%;
+  font-size: 1.2em;
+  font-family: roboto, sans serif;
+  
+}
+li
+{
+  display: flex;
+
+}
+ .process
+ {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   margin-left: 8%;
+   margin-top: 40px;
+  &__btn
+ {
+  background-color: $color-background;
+  border: solid 1px $color-background;
+  border-radius: 20px;
+  padding: 25px 90px 25px 30px;
+  font-family: roboto, sans serif;
+  font-size: 1em;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 0px #a1a1a1;
+ }
+ &__number
+ {
+   color: $color-white;
+   border: $colour-primary solid 1px;
+   border-radius: 50%;
+   background-color: $colour-primary;
+   position: absolute;
+   margin-left: -4%;
+   margin-top: 40px;
+   padding: 4px 8PX 4PX 8px;
+   
+ }
+}
+.process__btn span
+{
+  margin-left: 20px;
+}
+.resto 
+{
+  width:100%;
+  background: $color-background;
+  margin-top: 60px;
+  &__cards
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 60px;
+  }
+  &__item
+  {
+     border-radius: 20px;
+     box-shadow: 0px 0px 10px 0px #a1a1a1;
+     margin: 10px 5%;
+     color: black;
+     
+  }
+  &__contenu
+  {
+    padding: 15px;
+  }
+  &__new
+  {
+    position:absolute;
+    margin-left:-25%;
+    margin-top: 40px;
+    color: $color-text-new;
+    background: $color-background-new;
+    border-radius: 2px;
+    padding: 5px;
+    border: 1px solid $color-background-new
+
+  }
+  }
+  .resto__item img
+  {
+    object-fit: cover;
+    min-width: 100%;
+    border-radius:  20px 20px 0px 0px;
+    height: 200px;
+  }
+
+.resto h2
+{
+   padding-top: 50px;
+   margin-left: 5%;
+}
+.resto__contenu-heart
+{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.heart-icon
+{
+ font-size: 2em;
+ padding-top: 15px;
+ padding-right: 15px;
+}

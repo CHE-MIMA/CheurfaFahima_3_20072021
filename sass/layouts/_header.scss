@@ -1,0 +1,19 @@
+header
+{
+ display: flex;
+ justify-content: center;
+}
+.header__logo
+{
+  padding: 20px;
+  @include flex-center;
+}
+.left-icon
+{
+ color: black;
+ padding-top: 30px;
+ margin-left:-60px;
+ margin-right: 30px;
+ font-size: 1.2em;
+ position: relative;
+}

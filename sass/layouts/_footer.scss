@@ -1,0 +1,58 @@
+.footer
+  {
+   background-color: rgb(58, 57, 57);
+   border: solid rgb(58, 57, 57)  1px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-left: 30px;
+   color: $color-white;
+  
+  &__logo
+  { 
+    font-family: Shrikhand;
+    color: $color-white;
+    font-size: 0.8em;
+    padding-top: 15px;
+  
+  }
+  &__resto
+  {
+    display: flex;
+    color: $color-white;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+  &__hands
+  {
+    display: flex;
+    color: $color-white;
+    font-size: 1em;
+    margin-top:15px
+  }
+  &__contenu
+  {
+    color: $color-white;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+  &__contact
+  {
+    color: $color-white;
+    font-size: 1em;
+    padding-bottom: 50px;
+    margin-top: 15px;
+  }
+  }
+  .footer p
+  {
+    margin-left: 15px;
+  }
+  .footer__hands i
+  {
+    font-size: 0.8em;
+  }
+  
+  
+
