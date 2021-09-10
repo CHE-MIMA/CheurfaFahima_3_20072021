@@ -2,6 +2,7 @@
 
 .btn
 {
+ 
  align-items: center;
  background-color: $color-white ;
  background-image: linear-gradient(180deg, $colour-secondary,$colour-primary);
@@ -19,15 +20,4 @@
   opacity: 0.8;
   box-shadow: 5px 5px 5px 0px rgb(161, 160, 160);
 }
-}
-.commande-button
-{
- background: linear-gradient(180deg, $colour-secondary 0%, $colour-primary 100%);
- border-radius: 20px;
- color: $color-white;
- font-family: roboto, sans serif;
-  font-size: 1em;
-  margin-bottom: 40px;
-  padding: 10px 40px 10px 40px;
- 
 }
