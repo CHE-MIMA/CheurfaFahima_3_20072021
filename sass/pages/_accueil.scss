@@ -2,7 +2,9 @@
 {
   @include flex-center;
   background-color: #f3f3f3;
-  padding: 10px 10% 10px 10%;
+  padding: 10px 60px 10px 100px;
+  position: relative;
+
   width: 100%;
 }
 .location input
@@ -12,7 +14,7 @@
   border: 0px;
   font-family: roboto, sans serif;
   font-size: 1em;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 0px 5px 15px;
   font-weight: bold;
 }
 
@@ -61,6 +63,10 @@ li
   margin-top: 20px;
   font-weight: bold;
   box-shadow: 0px 0px 10px 0px #a1a1a1;
+   &:hover {
+    background: #eeebeb;
+    color: $colour-primary;
+  }
  }
  &__number
  {
@@ -69,54 +75,15 @@ li
    border-radius: 50%;
    background-color: $colour-primary;
    position: absolute;
-   margin-left: -4%;
+   margin-left: -15px;
    margin-top: 40px;
    padding: 4px 8PX 4PX 8px;
-   
  }
 }
 .process__btn span
 {
   margin-left: 20px;
 }
-.resto 
-{
-  width:100%;
-  background: $color-background;
-  margin-top: 60px;
-  &__cards
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
-    padding-bottom: 60px;
-  }
-  &__item
-  {
-     border-radius: 20px;
-     box-shadow: 0px 0px 10px 0px #a1a1a1;
-     margin: 10px 5%;
-     color: black;
-     
-  }
-  &__contenu
-  {
-    padding: 15px;
-  }
-  &__new
-  {
-    position:absolute;
-    margin-left:-25%;
-    margin-top: 40px;
-    color: $color-text-new;
-    background: $color-background-new;
-    border-radius: 2px;
-    padding: 5px;
-    border: 1px solid $color-background-new
-
-  }
-  }
   .resto__item img
   {
     object-fit: cover;

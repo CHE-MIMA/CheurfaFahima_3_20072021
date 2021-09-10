@@ -41,15 +41,10 @@
 
   }
   .food 
-  {
+  {  
      background-color: $color-white;
      border-radius: 20px;
      margin: 15px;
-     &__cards
-     {
-       display: flex;
-       justify-content: space-between;
-     }
      &__contenu
      {
        display: flex;
@@ -58,6 +53,12 @@
        font-size: 1em;
        
      }
+  }
+  .food__contenu-icon-check
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .food h3
   {
@@ -69,7 +70,7 @@
    {
      font-size: 0.8em;
      font-weight: bold;
-     
+    
    }
   
 

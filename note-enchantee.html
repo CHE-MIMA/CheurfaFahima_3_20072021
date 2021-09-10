@@ -15,12 +15,16 @@
 
 <body>
     <header>
-        <a class=" left-icon" href="index.html">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-        <a class="header__logo" href="#">
-            <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
-        </a>
+       
+            <a class=" header__icon" href="index.html">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <div class="header">
+            <a class="header__logo" href="#">
+                <img src="images-ohmyfood/logo/ohmyfood@2x.svg" alt="logo-ohmyfood" />
+            </a>
+            </div>
+        </div>
     </header>
     <main>
         <!--cette balise va contenir mes propositions repas-->
@@ -47,19 +51,20 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="food">
                     <h3> Caviar osciètre </h3>
-                    <div class="food__cards">
-                        <div class="food__contenu">
-                            <p> Sur blini à la farine de blé noir </p>
-                            <p> <strong>35€</strong></p>
-                        </div>
-                        <div classe="food__contenu-icon-check">
-                            <i class="far fa-check-circle"></i>
-                        </div>
-
+                    <div class="food__contenu">
+                        <p>Sur blini à la farine de blé noir</p>
+                        <p> <strong>35€</strong></p>
                     </div>
+
+                    <div classe="food__contenu-icon-check">
+                        <i class="far fa-check-circle"></i>
+                    </div>
+
                 </div>
+
                 <div class="food">
                     <h3>Homard et espuma de...</h3>
                     <div class="food__cards">
@@ -160,10 +165,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="commande-button" type="button">
+            </div>
+            <div class="commande-btn">
+                <button class="btn" type="button">
                     <span>Commander</span>
                 </button>
             </div>
+
         </section>
     </main>
     <footer>
