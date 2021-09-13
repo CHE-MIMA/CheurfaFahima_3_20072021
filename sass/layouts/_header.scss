@@ -1,13 +1,16 @@
-
-.header__logo
-  { 
-    padding: 25px;
-     @include flex-center
-  }
+header
+{
+  @include flex-center
+  
+}
 .header__icon
 {
-  margin-top: -60px;
+  flex: blok;
+  margin-left: 20px;
+  margin-top: 10px;
   color: black;
-  padding-left: -20px;
   font-size: 1.2em;
+  margin-right: 95%;
+  position: absolute;
 }
+
