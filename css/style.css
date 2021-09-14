@@ -166,40 +166,46 @@ li {
   margin-top: 5px;
 }
 
-.food {
+.food__menu {
+  cursor: pointer;
   background-color: #fff;
   border-radius: 20px;
   margin: 15px;
-  padding: 5px;
+  padding: 15px 0px 0px 15px;
 }
-.food__contenu {
+.food__menu-contenu {
   display: flex;
   justify-content: space-between;
-  padding: 0px 10px 10px 10px;
+  font-family: roboto, sans-serif;
+}
+.food__menu-price {
+  font-weight: 800;
+}
+
+.food__icon {
+  border-radius: 0px 15px 15px 0px;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  color: #99E2D0;
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+}
+
+.food__icon i {
+  background-color: #fff;
+  border-radius: 100%;
+  width: 23px;
+  height: 23px;
+  padding: 3px 0px 2px 3px;
+}
+
+.food__menu h3, p {
   font-size: 1em;
-}
-
-.food__contenu-icon-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.food h3 {
-  padding: 10px 10px 0px 10px;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-.food strong {
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
-.commande-btn {
-  align-items: center;
-  text-align: center;
-  padding: 60PX 35% 20PX 35%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 * {
