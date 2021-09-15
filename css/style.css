@@ -164,14 +164,25 @@ li {
   height: 3px;
   margin-left: 15px;
   margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.food {
+  display: grid;
+}
+
+.food__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .food__menu {
   cursor: pointer;
   background-color: #fff;
   border-radius: 20px;
-  margin: 15px;
-  padding: 15px 0px 0px 15px;
+  margin-bottom: 20px;
+  padding: 15px 0px 15px 15px;
+  height: 70px;
 }
 .food__menu-contenu {
   display: flex;
@@ -181,24 +192,25 @@ li {
 .food__menu-price {
   font-weight: 800;
 }
-
-.food__icon {
+.food__menu-icon {
   border-radius: 0px 15px 15px 0px;
   border: 1px solid #99E2D0;
   background-color: #99E2D0;
-  color: #99E2D0;
-  padding: 20px;
   width: 70px;
   height: 70px;
-  margin-top: -35px;
+  margin-top: -34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.food__icon i {
+.food__menu-icon i {
   background-color: #fff;
   border-radius: 100%;
   width: 23px;
   height: 23px;
   padding: 3px 0px 2px 3px;
+  color: #99E2D0;
 }
 
 .food__menu h3, p {
@@ -206,6 +218,13 @@ li {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.commande-btn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 3rem 0;
 }
 
 * {

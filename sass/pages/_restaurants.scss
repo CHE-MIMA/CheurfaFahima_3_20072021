@@ -41,6 +41,7 @@
     font-weight: 800;
     margin-left: 15px;
     margin-right: 325px;
+    
   }
   .inderline
   {
@@ -50,10 +51,20 @@
     height: 3px;
     margin-left: 15px;
     margin-top: 5px;
+    margin-bottom: 20px;
 
   }
  
    
+  .food
+  {
+    display: grid;
+  }
+  .food__item
+  {
+    display: flex;
+    flex-direction: column;
+  }
  
 
 
@@ -62,51 +73,62 @@
     cursor: pointer;
     background-color: $color-white;
     border-radius: 20px;
-    margin: 15px;
-    padding: 15px 0px 0px 15px;
+    margin-bottom: 20px;
+    padding: 15px 0px 15px 15px;
+    height: 70px;
     
     &-contenu
      { display: flex;
       justify-content: space-between;
       font-family: roboto, sans-serif;
-       
+     
      }
     &-price
      { 
-       font-weight: 800;  
+       font-weight: 800;
+      
      }
-     
-   
-  }
-  .food__icon
+     &-icon
   { border-radius: 0px 15px 15px 0px;
     border: 1px solid $colour-tertiary;
     background-color: $colour-tertiary;
-    color: $colour-tertiary ;
-    padding:20px;
     width: 70px;
     height: 70px;
-    margin-top: -35px;
-  
+    margin-top: -34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
+   
+    
+    
+  } 
   }
-    .food__icon i
+  .food__menu-icon i
     {
       background-color: $color-white;
       border-radius: 100%;
       width: 23px;
       height: 23px;
       padding: 3px 0px 2px 3px; 
+    
+      color: $colour-tertiary;
     }
- 
-  .food__menu h3,p 
+  .food__menu h3 , p
   {
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  
+ 
+  .commande-btn
+  {
+    display: flex;
+text-decoration: none;
+justify-content: center;
+padding: 3rem 0;
+  }
   
 
 
