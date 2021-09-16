@@ -23,11 +23,39 @@
     &__heart-icon
     {
       font-size: 1.5em;
-      font-weight: normal;
+      
       margin-right: 40px;
       margin-top: 5px;
-    }
+     
+
+     font-size: 25px;
+     
+     font-weight: 300;
+     color: rgb(92, 88, 88);
+   }
+  
+   &__heart-icon::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position:absolute;
+    right: 20px;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 32px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+   &__heart-icon:hover::after {
+    opacity: 1;
+  }
+  }
+
   .menu__title h1
   {
     font-family: Shrikhand;
@@ -114,7 +142,7 @@
     
       color: $colour-tertiary;
     }
-  .food__menu h3 , p
+  .food__menu h3 
   {
     font-size: 1em;
     overflow: hidden;

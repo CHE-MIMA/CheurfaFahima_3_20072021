@@ -1,0 +1,30 @@
+.heart-icon
+{
+ font-size: 25px;
+ padding-top: 15px;
+ padding-right: 15px;
+ font-weight: 300;
+ color: rgb(92, 88, 88);
+}
+  
+.heart-icon::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position:absolute;
+    top: 84%;
+    right: -6px ;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 35px;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .heart-icon:hover::after {
+    opacity: 1;
+  }
