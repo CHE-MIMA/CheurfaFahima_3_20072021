@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .header {
+  width: 100%;
   box-shadow: 0 0 10px rgba(61, 60, 60, 0.25);
   z-index: 1;
   position: relative;
-  width: 100%;
 }
 .header__logo {
   display: flex;
@@ -33,11 +33,11 @@
 }
 
 .presentation {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F6F6F6;
-  width: 100%;
 }
 
 .presentation h1 {
@@ -146,15 +146,14 @@ li {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  right: 20px;
-  top: 60px;
+  right: 26px;
+  top: 58px;
   transform: translate(-50%, -50%);
   display: block;
-  font-size: 32px;
+  font-size: 27px;
   opacity: 0;
   transition: 0.5s ease-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -199,7 +198,7 @@ li {
   cursor: pointer;
   background-color: #fff;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin: 20px 20px 0px 20px;
   padding: 15px 0px 15px 15px;
   height: 70px;
 }
@@ -217,7 +216,7 @@ li {
   background-color: #99E2D0;
   width: 70px;
   height: 70px;
-  margin-top: -34px;
+  margin-top: -38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,7 +231,7 @@ li {
   color: #99E2D0;
 }
 
-.food__menu h3 {
+.food__menu-contenu p {
   font-size: 1em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -255,7 +254,6 @@ li {
 body {
   font-family: roboto, sans serif;
   font-size: 1em;
-  margin: auto;
 }
 
 ul {
@@ -419,11 +417,11 @@ header {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  top: 84%;
-  right: -6px;
+  top: 84.5%;
+  right: 0px;
   transform: translate(-50%, -50%);
   display: block;
-  font-size: 35px;
+  font-size: 27px;
   opacity: 0;
   transition: 0.5s ease-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -434,6 +432,64 @@ header {
 
 .heart-icon:hover::after {
   opacity: 1;
+}
+
+.loader-contenair {
+  animation: loader 0.01s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.loader {
+  height: 80px;
+  width: 80px;
+  top: 30%;
+  position: absolute;
+  border: 15px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
+  border-right-color: #FF79DA;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #99E2D0;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    background: transparent;
+    z-index: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

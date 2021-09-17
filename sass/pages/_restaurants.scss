@@ -39,15 +39,14 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position:absolute;
-    right: 20px;
-    top: 60px;
+    right: 26px;
+    top: 58px;
     transform: translate(-50%, -50%);
     display: block;
-    font-size: 32px;
+    font-size: 27px;
     opacity: 0;
     transition: 0.5s ease-out;
     background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-    -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -82,8 +81,6 @@
     margin-bottom: 20px;
 
   }
- 
-   
   .food
   {
     display: grid;
@@ -101,9 +98,10 @@
     cursor: pointer;
     background-color: $color-white;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin: 20px 20px 0px 20px;
     padding: 15px 0px 15px 15px;
     height: 70px;
+    
     
     &-contenu
      { display: flex;
@@ -122,14 +120,10 @@
     background-color: $colour-tertiary;
     width: 70px;
     height: 70px;
-    margin-top: -34px;
+    margin-top: -38px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-   
-    
-    
+    justify-content: center;  
   } 
   }
   .food__menu-icon i
@@ -139,23 +133,24 @@
       width: 23px;
       height: 23px;
       padding: 3px 0px 2px 3px; 
-    
       color: $colour-tertiary;
     }
-  .food__menu h3 
-  {
-    font-size: 1em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+  
+   .food__menu-contenu p
+    {
+      font-size: 1em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+   
  
   .commande-btn
   {
     display: flex;
-text-decoration: none;
-justify-content: center;
-padding: 3rem 0;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
   }
   
 
