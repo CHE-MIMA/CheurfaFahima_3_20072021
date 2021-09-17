@@ -443,9 +443,9 @@ header {
   justify-content: center;
   background-color: #F6F6F6;
   height: 100%;
-  position: fixed;
   width: 100%;
-  z-index: 10000;
+  position: absolute;
+  z-index: 2;
 }
 
 .loader {
