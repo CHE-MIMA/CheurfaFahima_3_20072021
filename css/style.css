@@ -451,6 +451,8 @@ header {
 .loader {
   height: 80px;
   width: 80px;
+  top: 30%;
+  position: absolute;
   border: 15px solid transparent;
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
