@@ -9,15 +9,13 @@ animation-fill-mode: both;
 background-color: $color-background;
 height: 100%;
 width: 100%;
-position: absolute;
+position: fixed;
 z-index: 2;
 }
 
 .loader {
   height: 80px;
   width: 80px;
-  top: 30%;
-  position: absolute;
   border: 15px solid transparent;
   border-top-color: $colour-primary;
   border-bottom-color:$colour-primary;
@@ -63,6 +61,8 @@ z-index: 2;
       opacity: 0;
       background: transparent;
       z-index: 0;
+      height: 0%;
+      width: 0%;
     }   
   }
   

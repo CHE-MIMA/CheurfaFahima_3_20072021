@@ -444,15 +444,13 @@ header {
   background-color: #F6F6F6;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
 .loader {
   height: 80px;
   width: 80px;
-  top: 30%;
-  position: absolute;
   border: 15px solid transparent;
   border-top-color: #9356DC;
   border-bottom-color: #9356DC;
@@ -489,6 +487,8 @@ header {
     opacity: 0;
     background: transparent;
     z-index: 0;
+    height: 0%;
+    width: 0%;
   }
 }
 
