@@ -18,9 +18,8 @@
     display: block;
     font-size: 27px;
     opacity: 0;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease;
     background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-    -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

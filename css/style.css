@@ -147,7 +147,7 @@ li {
   font-weight: 900;
   position: absolute;
   right: 26px;
-  top: 58px;
+  top: 58.5px;
   transform: translate(-50%, -50%);
   display: block;
   font-size: 27px;
@@ -185,15 +185,6 @@ li {
   margin-bottom: 20px;
 }
 
-.food {
-  display: grid;
-}
-
-.food__item {
-  display: flex;
-  flex-direction: column;
-}
-
 .food__menu {
   cursor: pointer;
   background-color: #fff;
@@ -201,41 +192,43 @@ li {
   margin: 20px 20px 0px 20px;
   padding: 15px 0px 15px 15px;
   height: 70px;
+  width: 100%;
+}
+.food__menu h3 {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .food__menu-contenu {
   display: flex;
   justify-content: space-between;
   font-family: roboto, sans-serif;
 }
+.food__menu-contenu p {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .food__menu-price {
   font-weight: 800;
 }
 .food__menu-icon {
-  border-radius: 0px 15px 15px 0px;
-  border: 1px solid #99E2D0;
+  border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
-  width: 70px;
-  height: 70px;
-  margin-top: -38px;
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top: 160px;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .food__menu-icon i {
-  background-color: #fff;
-  border-radius: 100%;
-  width: 23px;
-  height: 23px;
-  padding: 3px 0px 2px 3px;
+  background-color: white;
+  font-size: 25px;
   color: #99E2D0;
-}
-
-.food__menu-contenu p {
-  font-size: 1em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  border-radius: 50%;
 }
 
 .commande-btn {
@@ -423,9 +416,8 @@ header {
   display: block;
   font-size: 27px;
   opacity: 0;
-  transition: 0.5s ease-out;
+  transition: 0.5s ease;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -moz-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
