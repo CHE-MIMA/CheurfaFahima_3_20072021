@@ -42,7 +42,7 @@
     transition: 0.5s ease-out;
     background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent;
   }
   &__heart-icon:hover::after {
     opacity: 1;
@@ -70,7 +70,21 @@
   margin-top: 5px;
   margin-bottom: 20px;
 }
-
+.food
+{
+  @include desktop
+  {
+    display: flex;
+  }
+  &__item
+  {
+    @include desktop
+    {
+    width: 33%;
+ 
+    }
+  }
+}
 
 
 .food__menu {
@@ -86,18 +100,19 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-family: roboto, sans-serif;
+    font-family: "roboto";
     font-size: 1.2em;
     font-weight: bold;
   }
     p {
-      width:100%;
-      font-family: roboto, sans-serif;
+      width:90%;
+      font-family: "roboto";
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
       font-size: 1em;
       font-weight: 500;
+
     }
   
   &-price {
@@ -105,7 +120,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     font-weight: bold;
-    margin-top: -20PX;
+    font-size: 0.95em;
+    margin-top: -19PX;
     transition: 0.7s;
   }
   &-icon {
@@ -142,24 +158,29 @@
   &:hover &-icon {
   width: 70px;
     transform: translate(-70px);
-  }
+   }
   &:hover i
    { opacity: 1;
-      transform: rotate(360deg);
-
-     
+      transform: rotate(360deg); 
    }
   &:hover &-price {
     transform: translate(-70px);
+    
   }
   &:hover p, 
   &:hover h3
   {
     width: 70%;
+    @include desktop
+    {
+      width: 65%;
+    }
+    
   }
 }
 
-.commande-btn {
+.commande-btn
+ {
   display: flex;
   text-decoration: none;
   justify-content: center;

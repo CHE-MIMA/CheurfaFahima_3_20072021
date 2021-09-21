@@ -26,7 +26,7 @@
   background-color: #f3f3f3;
   color: black;
   border: 0px;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
   font-size: 1em;
   padding: 5px 0px 5px 15px;
   font-weight: bold;
@@ -43,7 +43,7 @@
 .presentation h1 {
   text-align: center;
   font-size: 1.4em;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
   margin: 30px 12% 0% 12%;
 }
 
@@ -51,7 +51,7 @@
   text-align: center;
   margin: 20px 5% 20px 5%;
   font-size: 1.2em;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
 }
 
 li {
@@ -71,7 +71,7 @@ li {
   border: solid 1px #F6F6F6;
   border-radius: 20px;
   padding: 25px 20% 25px 0;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
   font-size: 1em;
   margin-top: 20px;
   font-weight: bold;
@@ -185,6 +185,17 @@ li {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1025px) {
+  .food {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .food__item {
+    width: 33%;
+  }
+}
+
 .food__menu {
   cursor: pointer;
   background-color: #fff;
@@ -198,13 +209,13 @@ li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-family: roboto, sans-serif;
+  font-family: "roboto";
   font-size: 1.2em;
   font-weight: bold;
 }
 .food__menu p {
-  width: 100%;
-  font-family: roboto, sans-serif;
+  width: 90%;
+  font-family: "roboto";
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -216,7 +227,8 @@ li {
   justify-content: flex-end;
   align-items: flex-end;
   font-weight: bold;
-  margin-top: -20PX;
+  font-size: 0.95em;
+  margin-top: -19PX;
   transition: 0.7s;
 }
 .food__menu-icon {
@@ -259,6 +271,11 @@ li {
 .food__menu:hover p, .food__menu:hover h3 {
   width: 70%;
 }
+@media screen and (min-width: 1025px) {
+  .food__menu:hover p, .food__menu:hover h3 {
+    width: 65%;
+  }
+}
 
 .commande-btn {
   display: flex;
@@ -274,7 +291,7 @@ li {
 }
 
 body {
-  font-family: roboto, sans serif;
+  font-family: "roboto";
   font-size: 1em;
 }
 
@@ -282,19 +299,15 @@ ul {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 h2 {
   font-size: 1.3em;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
   font-weight: bold;
 }
 
 h3 {
   font-size: 1.2em;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
 }
 
 a {
@@ -307,11 +320,10 @@ a {
 
 .btn {
   align-items: center;
-  background-color: #fff;
   background-image: linear-gradient(180deg, #FF79DA, #9356DC);
   border-radius: 20px;
   color: #fff;
-  font-family: roboto, sans serif;
+  font-family: "roboto";
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 40px;
@@ -333,7 +345,6 @@ header {
 }
 
 .header__icon {
-  flex: blok;
   margin-left: 20px;
   margin-top: 10px;
   color: black;
@@ -391,14 +402,13 @@ header {
 }
 
 .resto {
-  width: 100%;
   background: #F6F6F6;
   margin-top: 60px;
 }
 .resto__item {
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px #a1a1a1;
-  margin: 10px 5%;
+  margin: 15px 5%;
   color: black;
   transition: 0.2s;
 }
@@ -406,12 +416,40 @@ header {
   transform: scale(1.01);
   box-shadow: 5px 5px 5px 0px #b3b1b1;
 }
+@media screen and (min-width: 1025px) {
+  .resto__item {
+    width: 46%;
+    margin: 20px 2%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .resto__item {
+    width: 46%;
+    margin: 20px 2%;
+  }
+}
 .resto__cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1025px) {
+  .resto__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .resto__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 .resto__contenu {
   padding: 15px;
@@ -441,7 +479,7 @@ header {
   font-weight: 900;
   position: absolute;
   top: 84.5%;
-  right: 0px;
+  right: 0.5px;
   transform: translate(-50%, -50%);
   display: block;
   font-size: 27px;
