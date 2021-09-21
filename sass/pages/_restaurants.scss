@@ -77,14 +77,15 @@
   cursor: pointer;
   background-color: $color-white;
   border-radius: 20px;
-  margin: 20px 20px 0px 20px;
-  padding: 15px 0px 15px 15px;
+  margin: 20px;
+  padding: 15px 15px 15px 15px;
   height: 70px;
-  width: 100%;
-  h3 {
-    width: 100%;
+  
+  & h3 {
+ 
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &-contenu {
@@ -92,9 +93,10 @@
     justify-content: space-between;
     font-family: roboto, sans-serif;
     p {
-      width: 100%;
+     
       white-space: nowrap;
       text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   &-price {
@@ -103,20 +105,23 @@
   &-icon {
     border-radius: 0px 20px 20px 0px;
     background-color: $colour-tertiary;
-    width: 75px;
+    width: 70px;
     height: 72px;
-    position: absolute;
-    top: 160px;
-    right: 0;
+    right: -15px;
+    top:-40px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 
     i {
-      background-color: white;
-      font-size: 25px;
+      background-color: $color-white;
+      font-size: 18px;
       color: $colour-tertiary;
       border-radius: 50%;
+      padding: 3px;
+      opacity: 1;
     }
   }
 }
@@ -125,5 +130,6 @@
   display: flex;
   text-decoration: none;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 15px 0;
+  font-weight: 800;
 }

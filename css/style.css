@@ -189,15 +189,14 @@ li {
   cursor: pointer;
   background-color: #fff;
   border-radius: 20px;
-  margin: 20px 20px 0px 20px;
-  padding: 15px 0px 15px 15px;
+  margin: 20px;
+  padding: 15px 15px 15px 15px;
   height: 70px;
-  width: 100%;
 }
 .food__menu h3 {
-  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .food__menu-contenu {
   display: flex;
@@ -205,9 +204,9 @@ li {
   font-family: roboto, sans-serif;
 }
 .food__menu-contenu p {
-  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .food__menu-price {
   font-weight: 800;
@@ -215,27 +214,30 @@ li {
 .food__menu-icon {
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
-  width: 75px;
+  width: 70px;
   height: 72px;
-  position: absolute;
-  top: 160px;
-  right: 0;
+  right: -15px;
+  top: -40px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .food__menu-icon i {
-  background-color: white;
-  font-size: 25px;
+  background-color: #fff;
+  font-size: 18px;
   color: #99E2D0;
   border-radius: 50%;
+  padding: 3px;
+  opacity: 1;
 }
 
 .commande-btn {
   display: flex;
   text-decoration: none;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 15px 0;
+  font-weight: 800;
 }
 
 * {
