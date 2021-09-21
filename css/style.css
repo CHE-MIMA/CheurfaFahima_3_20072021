@@ -197,31 +197,38 @@ li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-.food__menu-contenu {
-  display: flex;
-  justify-content: space-between;
   font-family: roboto, sans-serif;
+  font-size: 1.2em;
 }
-.food__menu-contenu p {
+.food__menu p {
+  font-family: roboto, sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .food__menu-price {
-  font-weight: 800;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: -20PX;
+  margin-right: 5PX;
+  transition: 0.5s ease-in-out;
 }
 .food__menu-icon {
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
-  width: 70px;
-  height: 72px;
+  width: 0px;
+  height: 70px;
   right: -15px;
-  top: -40px;
+  top: -56px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 100%;
+  transition: 0.5s ease-in-out;
 }
 .food__menu-icon i {
   background-color: #fff;
@@ -229,7 +236,20 @@ li {
   color: #99E2D0;
   border-radius: 50%;
   padding: 3px;
+  opacity: 0;
+}
+.food__menu:hover {
+  box-shadow: 2px 2px 10px #b3b1b1;
+}
+.food__menu:hover .food__menu-icon {
+  width: 70px;
+  transform: translate(-70px);
+}
+.food__menu:hover i {
   opacity: 1;
+}
+.food__menu:hover .food__menu-price {
+  transform: translate(-70px);
 }
 
 .commande-btn {
