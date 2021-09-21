@@ -189,32 +189,35 @@ li {
   cursor: pointer;
   background-color: #fff;
   border-radius: 20px;
-  margin: 20px;
+  margin: 20px 13px 20px 13px;
   padding: 15px 15px 15px 15px;
   height: 70px;
 }
 .food__menu h3 {
+  width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   font-family: roboto, sans-serif;
   font-size: 1.2em;
+  font-weight: bold;
 }
 .food__menu p {
+  width: 100%;
   font-family: roboto, sans-serif;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 1em;
+  font-weight: 500;
 }
 .food__menu-price {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   font-weight: bold;
-  font-size: 1em;
   margin-top: -20PX;
-  margin-right: 5PX;
-  transition: 0.5s ease-in-out;
+  transition: 0.7s;
 }
 .food__menu-icon {
   border-radius: 0px 20px 20px 0px;
@@ -228,7 +231,7 @@ li {
   align-items: center;
   justify-content: center;
   margin-left: 100%;
-  transition: 0.5s ease-in-out;
+  transition: 0.7s;
 }
 .food__menu-icon i {
   background-color: #fff;
@@ -236,6 +239,7 @@ li {
   color: #99E2D0;
   border-radius: 50%;
   padding: 3px;
+  transition: 0.7s;
   opacity: 0;
 }
 .food__menu:hover {
@@ -247,9 +251,13 @@ li {
 }
 .food__menu:hover i {
   opacity: 1;
+  transform: rotate(360deg);
 }
 .food__menu:hover .food__menu-price {
   transform: translate(-70px);
+}
+.food__menu:hover p, .food__menu:hover h3 {
+  width: 70%;
 }
 
 .commande-btn {
@@ -257,7 +265,6 @@ li {
   text-decoration: none;
   justify-content: center;
   padding: 15px 0;
-  font-weight: 800;
 }
 
 * {
@@ -306,6 +313,7 @@ a {
   color: #fff;
   font-family: roboto, sans serif;
   font-size: 1em;
+  font-weight: 600;
   margin-bottom: 40px;
   padding: 15px;
   opacity: 1;
