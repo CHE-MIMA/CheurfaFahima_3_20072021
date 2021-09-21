@@ -21,6 +21,8 @@
   @include desktop
   {
     margin-top: -50px;
+    margin-right: 3%;
+    margin-left: 3%;
   }
   &__title {
     display: flex;
@@ -115,6 +117,10 @@
     font-family: "roboto";
     font-size: 1.2em;
     font-weight: bold;
+    @include desktop
+    {
+      font-size: 1em;
+    }
   }
     p {
       width:90%;
@@ -149,6 +155,10 @@
     justify-content: center;
     margin-left: 100%;
     transition: 0.7s;
+    @include desktop
+    {
+    top: -52PX;
+    }
    
 
     i {
@@ -185,7 +195,7 @@
     width: 70%;
     @include desktop
     {
-      width: 65%;
+      width: 63%;
     }
     
   }

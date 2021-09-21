@@ -140,6 +140,8 @@ li {
 @media screen and (min-width: 1025px) {
   .menu {
     margin-top: -50px;
+    margin-right: 3%;
+    margin-left: 3%;
   }
 }
 .menu__title {
@@ -228,6 +230,11 @@ li {
   font-size: 1.2em;
   font-weight: bold;
 }
+@media screen and (min-width: 1025px) {
+  .food__menu h3 {
+    font-size: 1em;
+  }
+}
 .food__menu p {
   width: 90%;
   font-family: "roboto";
@@ -260,6 +267,11 @@ li {
   margin-left: 100%;
   transition: 0.7s;
 }
+@media screen and (min-width: 1025px) {
+  .food__menu-icon {
+    top: -52PX;
+  }
+}
 .food__menu-icon i {
   background-color: #fff;
   font-size: 18px;
@@ -288,7 +300,7 @@ li {
 }
 @media screen and (min-width: 1025px) {
   .food__menu:hover p, .food__menu:hover h3 {
-    width: 65%;
+    width: 63%;
   }
 }
 
