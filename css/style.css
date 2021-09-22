@@ -137,7 +137,7 @@
 }
 @media screen and (min-width: 1025px) {
   .menu__img {
-    height: 600px;
+    height: 570px;
   }
 }
 
@@ -401,6 +401,11 @@ header {
   justify-content: space-between;
   padding-left: 30px;
   color: #fff;
+}
+@media screen and (min-width: 1025px) {
+  .footer {
+    padding-left: 50px;
+  }
 }
 .footer__logo {
   font-family: Shrikhand;
