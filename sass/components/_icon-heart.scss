@@ -22,6 +22,10 @@
     background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include desktop
+    {
+      right: 1px;
+    }
   }
   
   .heart-icon:hover::after {

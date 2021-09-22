@@ -39,14 +39,12 @@
   align-items: center;
   background-color: #F6F6F6;
 }
-
 .presentation h1 {
   text-align: center;
   font-size: 1.4em;
   font-family: "roboto";
   margin: 30px 12% 0% 12%;
 }
-
 .presentation p {
   text-align: center;
   margin: 20px 5% 20px 5%;
@@ -54,16 +52,30 @@
   font-family: "roboto";
 }
 
-li {
+.process {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .process {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .process ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.process li {
   display: flex;
 }
-
-.process {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-top: 40px;
+@media screen and (min-width: 1025px) {
+  .process li {
+    width: 32%;
+  }
 }
 .process__btn {
   width: 98%;
@@ -420,7 +432,6 @@ header {
   padding-bottom: 50px;
   margin-top: 15px;
 }
-
 .footer p {
   margin-left: 15px;
 }
@@ -516,6 +527,11 @@ header {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 1025px) {
+  .heart-icon::after {
+    right: 1px;
+  }
 }
 
 .heart-icon:hover::after {
