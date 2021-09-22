@@ -91,7 +91,7 @@
     display: flex;
   }
   &__item
-  {
+  { 
     @include desktop
     {
     width: 33%;
@@ -102,6 +102,7 @@
 
 
 .food__menu {
+  @include animation-menu;
   cursor: pointer;
   background-color: $color-white;
   border-radius: 20px;
