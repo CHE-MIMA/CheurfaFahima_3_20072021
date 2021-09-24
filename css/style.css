@@ -445,11 +445,10 @@ header {
   background-color: #3a3939;
   border: solid #3a3939 1px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-top: 20px;
   padding-left: 30px;
   color: #fff;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1025px) {
   .footer {
@@ -457,9 +456,15 @@ header {
     padding-right: 100px;
   }
 }
+.footer__elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media screen and (min-width: 1025px) {
   .footer__elements {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -492,7 +497,6 @@ header {
 .footer__contact {
   color: #fff;
   font-size: 1em;
-  padding-bottom: 50px;
   margin-top: 15px;
   font-weight: 600;
 }
