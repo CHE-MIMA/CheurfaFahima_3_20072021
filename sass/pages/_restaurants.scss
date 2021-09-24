@@ -4,11 +4,11 @@
   height: 370px;
   @include tablette
   {
-     height: 520px;
+     height: 400px;
   }
   @include desktop
   {
-    height: 570px;
+    height: 430px;
   }
 }
 .menu {
@@ -99,7 +99,6 @@
     }
   }
 }
-
 
 .food__menu {
   @include animation-menu;
@@ -202,6 +201,46 @@
   }
 }
 
+#card-1
+{
+  animation-delay: 0.2s
+}
+#card-2
+{
+  animation-delay: 0.4s
+}
+#card-3
+{
+  animation-delay: 0.6s
+}
+#card-4
+{
+  animation-delay: 0.8s
+}
+#card-5
+{
+  animation-delay: 1s
+}
+#card-6
+{
+  animation-delay: 1.2s
+}
+#card-7
+{
+  animation-delay: 1.4s
+}
+#card-8
+{
+  animation-delay: 1.6s
+}
+#card-9
+{
+  animation-delay: 1.8s
+}
+#card-10
+{
+  animation-delay: 2s
+}
 .commande-btn
  {
   display: flex;

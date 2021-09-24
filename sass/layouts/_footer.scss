@@ -11,14 +11,23 @@
    @include desktop
    {
     padding-left: 50px;
+    padding-right: 100px;
    }
+   &__elements
+   {
+     @include desktop
+     {
+     display: flex;
+     justify-content: space-between;
+     }
 
+   }
 
   &__logo
   { 
     font-family: Shrikhand;
     color: $color-white;
-    font-size: 0.8em;
+    font-size: 1em;
     padding-top: 15px;
   
   }
@@ -28,20 +37,22 @@
     color: $color-white;
     font-size: 1em;
     margin-top: 15px;
+    font-weight: 600;
   }
   &__hands
   {
     display: flex;
     color: $color-white;
     font-size: 1em;
-    margin-top:15px
+    margin-top:15px;
+    font-weight: 600;
   }
   &__contenu
   {
     color: $color-white;
     font-size: 1em;
     margin-top: 15px;
-    font-weight: 400;
+    font-weight: 600;
   }
   &__contact
   {
@@ -49,6 +60,7 @@
     font-size: 1em;
     padding-bottom: 50px;
     margin-top: 15px;
+    font-weight: 600;
   }
    & p
    {
