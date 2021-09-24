@@ -183,8 +183,8 @@
   opacity: 0;
   transition: 0.5s ease-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .menu__heart-icon:hover::after {
   opacity: 1;
@@ -593,8 +593,8 @@ header {
   opacity: 0;
   transition: 0.5s ease;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 @media screen and (min-width: 1025px) {
   .heart-icon::after {
