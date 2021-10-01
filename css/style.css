@@ -183,7 +183,8 @@
   opacity: 0;
   transition: 0.5s ease-out;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 .menu__heart-icon:hover::after {
@@ -497,7 +498,6 @@ header {
 .footer__contact {
   color: #fff;
   font-size: 1em;
-  margin-top: 15px;
   font-weight: 600;
 }
 .footer p {
