@@ -593,7 +593,8 @@ header {
   opacity: 0;
   transition: 0.5s ease;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 @media screen and (min-width: 1025px) {
