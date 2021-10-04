@@ -454,7 +454,6 @@ header {
 @media screen and (min-width: 1025px) {
   .footer {
     padding-left: 50px;
-    padding-right: 100px;
   }
 }
 .footer__elements {
@@ -495,10 +494,21 @@ header {
   margin-top: 15px;
   font-weight: 600;
 }
+@media screen and (min-width: 1025px) {
+  .footer__contenu {
+    margin-right: -100px;
+  }
+}
 .footer__contact {
   color: #fff;
   font-size: 1em;
   font-weight: 600;
+  margin-top: 15px;
+}
+@media screen and (min-width: 1025px) {
+  .footer__contact {
+    padding-right: 250px;
+  }
 }
 .footer p {
   margin-left: 15px;
