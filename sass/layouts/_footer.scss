@@ -19,6 +19,7 @@
    flex-direction: column;
    justify-content: space-between;
    
+   
   
      @include desktop
      {
@@ -60,22 +61,16 @@
     font-size: 1em;
     margin-top: 15px;
     font-weight: 600;
-  
-    @include desktop
-    {
-      margin-right: -100px;
-    }
   }
   &__contact
   { 
-    
     color: $color-white;
     font-size: 1em;
     font-weight: 600;
     margin-top: 15px;
     @include desktop
     {
-    padding-right: 250px;
+    padding-right: 50px;
     }
   }
    & p

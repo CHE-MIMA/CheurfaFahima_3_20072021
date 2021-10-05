@@ -494,11 +494,6 @@ header {
   margin-top: 15px;
   font-weight: 600;
 }
-@media screen and (min-width: 1025px) {
-  .footer__contenu {
-    margin-right: -100px;
-  }
-}
 .footer__contact {
   color: #fff;
   font-size: 1em;
@@ -507,7 +502,7 @@ header {
 }
 @media screen and (min-width: 1025px) {
   .footer__contact {
-    padding-right: 250px;
+    padding-right: 50px;
   }
 }
 .footer p {
