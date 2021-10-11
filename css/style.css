@@ -127,7 +127,7 @@
 
 .menu__img {
   object-fit: cover;
-  min-width: 100%;
+  width: 100%;
   height: 370px;
 }
 @media screen and (min-width: 768px) {
@@ -382,6 +382,7 @@
 body {
   font-family: "roboto";
   font-size: 1em;
+  font-weight: 500;
 }
 
 ul {
@@ -489,21 +490,25 @@ header {
   font-weight: 600;
 }
 .footer__contenu {
+  margin-top: 15px;
+}
+.footer__contenu a {
+  font-weight: 600;
   color: #fff;
   font-size: 1em;
-  margin-top: 15px;
-  font-weight: 600;
 }
 .footer__contact {
-  color: #fff;
-  font-size: 1em;
-  font-weight: 600;
   margin-top: 15px;
 }
 @media screen and (min-width: 1025px) {
   .footer__contact {
     padding-right: 50px;
   }
+}
+.footer__contact a {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1em;
 }
 .footer p {
   margin-left: 15px;

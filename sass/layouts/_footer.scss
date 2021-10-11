@@ -37,6 +37,7 @@
     color: $color-white;
     font-size: 1em;
     padding-top: 15px;
+    
   
   }
   &__resto
@@ -46,6 +47,7 @@
     font-size: 1em;
     margin-top: 15px;
     font-weight: 600;
+   
   }
   &__hands
   {
@@ -54,24 +56,31 @@
     font-size: 1em;
     margin-top:15px;
     font-weight: 600;
+   
   }
   &__contenu
   {
+    margin-top: 15px;
+  }
+  &__contenu a 
+  {
+    font-weight: 600;
     color: $color-white;
     font-size: 1em;
-    margin-top: 15px;
-    font-weight: 600;
+   
   }
   &__contact
   { 
-    color: $color-white;
-    font-size: 1em;
-    font-weight: 600;
     margin-top: 15px;
     @include desktop
     {
     padding-right: 50px;
     }
+  }
+  &__contact a
+  { font-weight: 600;
+    color: $color-white;
+    font-size: 1em;
   }
    & p
    {
